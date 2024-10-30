@@ -1224,20 +1224,20 @@ section,
 }
 
 .services .service-item.item-indigo {
-  border-bottom: 3px solid #6610f2;
+  border-bottom: 3px solid #005307;
 }
 
 .services .service-item.item-indigo .icon {
-  color: #6610f2;
+  color: #005307;
   background: rgba(102, 16, 242, 0.1);
 }
 
 .services .service-item.item-indigo .read-more {
-  color: #6610f2;
+  color: #005307;
 }
 
 .services .service-item.item-indigo:hover {
-  background: #6610f2;
+  background: #005307;
 }
 
 .services .service-item.item-pink {
@@ -2791,4 +2791,23 @@ section,
 
 .whatsapp-button i {
   margin: 0;
+}
+
+.video-section .video-container {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%; /* Relación de aspecto 16:9 */
+}
+
+.video-section .video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px; /* Opcional, para esquinas redondeadas */
+}
+
+.video-container video {
+  pointer-events: none;
 }
